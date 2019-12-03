@@ -1,4 +1,4 @@
-# Salary Prediction based on job details
+# Salary Prediction based on job description features.
 ## Define the problem
 Let's say we are the job seeker who's gotten our very first offer and has no clue on negotiation, maybe we are HR who has to decide how much pay this person should get in his/her new job, here comes this project where we define and analyse the features which get you the salary expected across several aspects such as position and the industry you work in etc. Hence we are to train a model which can be used as a tool across several endpoints to help get a salary estimate for the Job. 
 
