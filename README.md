@@ -24,11 +24,15 @@ We will use <a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean squa
 
 ## A few results from our analyses and outcomes
 * In our analysis of the dataset we found that CompanyId is not a prevalent feature as the average salary across each company seemed to be across the same range.<img src="https://github.com/ankur26/SalaryPrediction/blob/master/Images/companyId_plot.png">The lower plot as we see remains a straight line across every company hence this feature is not of much use during modeling.
-* We also see that once we convert the categorical variables to numerical through <a href="https://www.questionpro.com/blog/ordinal-scale/">ordinal encoding</a> there is a high correlation within two features that is **major** and **degree**.<img src="https://github.com/ankur26/SalaryPrediction/blob/master/Images/corr_map_03-12-2019%2020_29_05.png"> 
+* We also see that once we convert the categorical variables to numerical through <a href="https://www.questionpro.com/blog/ordinal-scale/">ordinal encoding</a> there is a high correlation within two features that is **major** and **degree**.
+<img src="https://github.com/ankur26/SalaryPrediction/blob/master/Images/corr_map_03-12-2019%2020_29_05.png"> 
+
 We see that at the lower corner(images saved are not clear). To solve for this issue we combined both of the features in one called as degree_in_major and we were able to get a nice positive correlation while not losing a large chunk of information as shown below. <img src="https://github.com/ankur26/SalaryPrediction/blob/master/Images/degree_in_major_plot.png">
 The lower plot shows a nice positive correlation with the salary once the degree and major categories are combined.
 
-* The salary variable also had a few outliers which were dropped. This plot shows the outliers present in the salary.<img src="https://github.com/ankur26/SalaryPrediction/blob/master/Images/salaryhistogram.png">The box plot on the right clearly shows that most of the outliers are present on upper end than the lower.
+* The salary variable also had a few outliers which were dropped. This plot shows the outliers present in the salary.
+<img src="https://github.com/ankur26/SalaryPrediction/blob/master/Images/salaryhistogram.png">
+The box plot on the right clearly shows that most of the outliers are present on upper end than the lower.
 
 * After dropping companyId we see that every other feature except **miles from Metropolis** is positively correlated with the data.
 
